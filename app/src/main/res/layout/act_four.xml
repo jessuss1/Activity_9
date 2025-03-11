@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/nextButton"
+        android:layout_width="227dp"
+        android:layout_height="89dp"
+        android:layout_marginBottom="256dp"
+        android:text="Continuar"
+        android:textSize="40sp"
+        app:cornerRadius="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/nameTextField"
+        android:layout_width="210dp"
+        android:layout_height="57dp"
+        android:ems="10"
+        android:hint="Nombre"
+        android:inputType="text|textCapWords"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.463"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.129" />
+
+    <EditText
+        android:id="@+id/groupTextField"
+        android:layout_width="210dp"
+        android:layout_height="55dp"
+        android:digits="1234-"
+        android:hint="Grupo"
+        android:inputType="number"
+        android:maxLength="3"
+        app:layout_constraintBottom_toTopOf="@+id/careerComboBox"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.462"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.803" />
+
+    <Spinner
+        android:id="@+id/careerComboBox"
+        android:layout_width="210dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="79dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="87dp"
+        android:layout_marginBottom="277dp"
+        android:entries="@array/phase_options"
+        android:spinnerMode="dropdown"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.447" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

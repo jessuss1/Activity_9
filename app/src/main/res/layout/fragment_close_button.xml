@@ -1,0 +1,21 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragment_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<!--    This file is for the button appearance  -->
+<!--    The color "@color/ios_red" is defined @ res/values/colors.xml-->
+
+    <Button
+        android:id="@+id/closeButton"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="top|end"
+        android:backgroundTint="@color/ios_red"
+        android:text="✖"
+        android:textSize="18sp"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:elevation="4dp"
+        android:padding="4dp"/>
+</FrameLayout>

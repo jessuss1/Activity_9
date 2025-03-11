@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="ios_blue">#006EE6</color>
+    <color name="ios_red">#E6352b</color>
+</resources>

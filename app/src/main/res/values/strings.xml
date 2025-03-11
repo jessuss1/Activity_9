@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Act 9</string>
+
+    <string-array name="spinner_content">
+        <item>Seleccione una app</item>
+        <item>Actividad 1</item>
+        <item>Actividad 2</item>
+        <item>Actividad 3</item>
+        <item>Actividad 4</item>
+        <item>Actividad 5</item>
+        <item>Actividad 6</item>
+        <item>Actividad 7</item>
+        <item>Actividad 8</item>
+    </string-array>
+
+    <string-array name="phase_options">
+        <item>Selecciona tu carrera</item>
+        <item>LISI</item>
+        <item>LI</item>
+    </string-array>
+
+
+    <string name="spinner_hint">Selecciona tu fase</string>
+
+
+</resources>
