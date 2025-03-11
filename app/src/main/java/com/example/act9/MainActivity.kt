@@ -52,11 +52,12 @@ class MainActivity : AppCompatActivity() {
                     binding.button.isEnabled = true
 
                     selectedActivity = when (position){
+//                      NOTICE:  ALL LAYOUT FILES MUST BE DECLARED IN MANIFEST OTHERWISE IT WON'T OPEN AND THE APP WILL CRASH
                         1 -> ActOne::class.java
                         2 -> ActTwo::class.java
                         3 -> ActThree::class.java
                         4 -> ActFour::class.java
-//                        ActFive a placeholder for now
+//                        ActFive is a placeholder for now
                         5 -> ActFive::class.java
                         6 -> ActSix::class.java
 
