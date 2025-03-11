@@ -26,7 +26,7 @@
         <activity android:name=".ActThree"/>
         <activity android:name=".ActFour"/>
         <activity android:name=".ActFourB"/>
-
+        <activity android:name=".ActFive"/>
         <activity android:name=".ActSix"/>
     </application>
 
