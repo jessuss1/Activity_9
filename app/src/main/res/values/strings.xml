@@ -9,8 +9,8 @@
         <item>Actividad 4</item>
         <item>Actividad 5</item>
         <item>Actividad 6</item>
-        <item>Actividad 7</item>
-        <item>Actividad 8</item>
+        <item>Actividades 7 y 8</item>
+
     </string-array>
 
     <string-array name="phase_options">
@@ -61,6 +61,51 @@
         <item>Sabritas\nCrema</item>
         <item>Fritos\nLimon-Sal</item>
 
+    </string-array>
+
+    <string-array name="students">
+        <item>Seleccionar estudiante</item>
+        <item>Eduardo</item>
+        <item>Joseph</item>
+        <item>Mauricio</item>
+        <item>Jesus</item>
+    </string-array>
+
+    <string-array name="maestrosProgramacion">
+        <item>Natividad\nCovarrubias</item>
+        <item>Juan\nPeraza</item>
+        <item>Juan Jose\nMalpica</item>
+        <item>Alvaro\nPeraza</item>
+        <item>Ulises\nZaldivar</item>
+        <item>Jesus\nMora</item>
+    </string-array>
+
+    <string-array name="materiasProgramacion">
+        <item>Interaccion\nHombre Maquina</item>
+        <item>Administracion\nde Paginas Web</item>
+        <item>Desarrollo de\nAplicaciones\nMobiles</item>
+        <item>Sistemas de\nInformacion\nGeografica</item>
+        <item>Programacion de\nVideojuegos</item>
+        <item>Derecho\nInformatico</item>
+    </string-array>
+
+
+    <string-array name="maestrosRedes">
+        <item>Natividad\nCovarrubias</item>
+        <item>Alan\nSegura</item>
+        <item>Juan Jose\nMalpica</item>
+        <item>Jesus\nNieto</item>
+        <item>Miguel\nAstorga</item>
+        <item>Jesus\nMora</item>
+    </string-array>
+
+    <string-array name="materiasRedes">
+        <item>Interaccion\nHombre Maquina</item>
+        <item>Innovaciones\nTecnologicas</item>
+        <item>Desarrollo de\nAplicaciones\nMobiles</item>
+        <item>Telematica III</item>
+        <item>Sistemas\nOperativos</item>
+        <item>Derecho\nInformatico</item>
     </string-array>
 
 

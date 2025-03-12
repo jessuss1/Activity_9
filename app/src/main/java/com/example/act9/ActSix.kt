@@ -28,9 +28,10 @@ class ActSix : BaseActivity() {
         }
 
         binding.resultTextView.text = ""
+        binding.textView4.text = ""
 
         binding.button.setOnClickListener {
-
+            binding.textView4.text = ""
             val imm = getSystemService(InputMethodManager::class.java)
             imm?.hideSoftInputFromWindow(currentFocus?.windowToken, 0)
 
@@ -53,6 +54,7 @@ class ActSix : BaseActivity() {
             val roundedResult = Math.round(result)
 
             binding.resultTextView.text = "$input °C = $roundedResult °F"
+            binding.textView4.text="El valor esta redondeado*"
 
         } catch (e: NumberFormatException) {
             val toast = Toast.makeText(this, "Ingrese solo números!", Toast.LENGTH_SHORT)

@@ -28,6 +28,19 @@
         <activity android:name=".ActFourB"/>
         <activity android:name=".ActFive"/>
         <activity android:name=".ActSix"/>
+        <activity android:name=".ActSeven"/>
+        <activity android:name=".ActSevenB"/>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.act9.fileprovider"
+            android:grantUriPermissions="true"
+            android:exported="false">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
     </application>
 
 </manifest>

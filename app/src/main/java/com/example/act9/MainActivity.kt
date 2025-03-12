@@ -60,8 +60,9 @@ class MainActivity : AppCompatActivity() {
 //                        ActFive is a placeholder for now
                         5 -> ActFive::class.java
                         6 -> ActSix::class.java
+                        7 -> ActSeven::class.java
 
-//                        TODO: Agregar las actividades 5, 7 y 8
+
 
                         else -> null
                     }

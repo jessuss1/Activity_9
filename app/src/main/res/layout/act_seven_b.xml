@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/schedule">
+
+
+    <ImageButton
+        android:id="@+id/share_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:src="@android:drawable/ic_menu_share"
+        app:layout_constraintBottom_toTopOf="@+id/table"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/displayNameTextView"
+        android:layout_width="161dp"
+        android:layout_height="59dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.452"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.065"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/displayFaseTextView"
+        android:layout_width="161dp"
+        android:layout_height="59dp"
+
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.45"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/displayNameTextView"
+        app:layout_constraintVertical_bias="0.111"
+        tools:ignore="HardcodedText" />
+
+    <TableLayout
+        android:id="@+id/table"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="2dp"
+        android:showDividers="beginning"
+        android:divider="@android:color/darker_gray"
+        android:stretchColumns="*"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/displayFaseTextView"
+        app:layout_constraintVertical_bias="0.8"
+        tools:layout_editor_absoluteX="2dp"
+        tools:layout_editor_absoluteY="1267dp">
+
+        <!--Header-->
+        <TableRow>
+
+            <!--Col 1-->
+            <TextView
+                android:layout_column="0"
+                android:padding="10dp"
+                android:text="Hora"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
+            <!--Col 2-->
+            <TextView
+                android:layout_column="1"
+                android:padding="10dp"
+                android:text="Materia"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
+            <!--Col 3-->
+            <TextView
+                android:layout_column="1"
+                android:padding="10dp"
+                android:text="Docente"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
+        </TableRow>
+
+        <!--Row 1-->
+        <TableRow
+            android:id="@+id/row0">
+
+            <TextView
+                android:layout_column="0"
+                android:padding="10dp"
+                android:text="4:00 pm"
+                android:textSize="20sp"
+                android:textStyle="bold|italic"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/materia0"
+                android:layout_column="0"
+                android:padding="10dp"
+                android:textSize="20sp"
+                android:textStyle="italic"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/maestro0"
+                android:layout_column="0"
+                android:padding="10dp"
+                android:textSize="20sp"
+                android:textStyle="bold|italic"
+                tools:ignore="HardcodedText" />
+        </TableRow>
+
+        <!--Row 2-->
+        <TableRow
+            android:id="@+id/row1">
+
+            <TextView
+                android:layout_column="0"
+                android:padding="10dp"
+                android:text="4:40 pm"
+                android:textSize="20sp"
+                android:textStyle="italic"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/materia1"
+                android:layout_column="0"
+                android:padding="10dp"
+                android:textSize="20sp"
+                android:textStyle="italic"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/maestro1"
+                android:layout_column="0"
+                android:padding="10dp"
+                android:textSize="20sp"
+                android:textStyle="bold|italic"
+                tools:ignore="HardcodedText" />
+        </TableRow>
+
+        <!--Row 3-->
+        <TableRow
+            android:id="@+id/row2">
+
+            <TextView
+                android:layout_column="0"
+                android:padding="10dp"
+                android:text="5:20 pm"
+                android:textSize="20sp"
+                android:textStyle="bold|italic"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/materia2"
+                android:layout_column="0"
+                android:padding="10dp"
+                android:textSize="20sp"
+                android:textStyle="italic"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/maestro2"
+                android:layout_column="0"
+                android:padding="10dp"
+                android:textSize="20sp"
+                android:textStyle="bold|italic"
+                tools:ignore="HardcodedText" />
+        </TableRow>
+
+        <!--Row 4-->
+        <TableRow
+            android:id="@+id/row03">
+
+            <TextView
+                android:layout_column="0"
+                android:padding="10dp"
+                android:text="6:00 pm"
+                android:textSize="20sp"
+                android:textStyle="italic"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/materia3"
+                android:layout_column="0"
+                android:padding="10dp"
+                android:textSize="20sp"
+                android:textStyle="italic"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/maestro3"
+                android:layout_column="0"
+                android:padding="10dp"
+                android:textSize="20sp"
+                android:textStyle="bold|italic"
+                tools:ignore="HardcodedText" />
+        </TableRow>
+
+        <!--Row 5-->
+        <TableRow
+            android:id="@+id/row4">
+
+            <TextView
+                android:layout_column="0"
+                android:padding="10dp"
+                android:text="6:40 pm"
+                android:textSize="20sp"
+                android:textStyle="italic"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/materia4"
+                android:layout_column="0"
+                android:padding="10dp"
+                android:textSize="20sp"
+                android:textStyle="italic"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/maestro4"
+                android:layout_column="0"
+                android:padding="10dp"
+                android:textSize="20sp"
+                android:textStyle="bold|italic"
+                tools:ignore="HardcodedText" />
+        </TableRow>
+
+        <!--Row 6-->
+        <TableRow
+            android:id="@+id/row5">
+
+            <TextView
+                android:layout_column="0"
+                android:padding="10dp"
+                android:text="7:20 pm"
+                android:textSize="20sp"
+                android:textStyle="bold|italic"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/materia5"
+                android:layout_column="0"
+                android:padding="10dp"
+                android:textSize="20sp"
+                android:textStyle="italic"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/maestro5"
+                android:layout_column="0"
+                android:padding="10dp"
+                android:textSize="20sp"
+                android:textStyle="bold|italic"
+                tools:ignore="HardcodedText" />
+        </TableRow>
+
+
+    </TableLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
